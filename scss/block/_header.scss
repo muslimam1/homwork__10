@@ -1,11 +1,9 @@
+
 .header__logo{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
-    position: sticky;
-    top: 0;
-    left: 0;
 }
 
 .header__list{
@@ -17,6 +15,10 @@
     display: flex;
     align-items: center;
     gap: 30px;
+}
+
+.header__picture{
+    display: none;
 }
 
 .header__title{
@@ -82,5 +84,22 @@
         color: #fff;
         background-color: #ea6579;
         transform: scale(.95);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header__list{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header__picture{
+        display: block;
+    }
+
+    .header__sign{
+        background-color: #f53855;
+        display: none;
     }
 }

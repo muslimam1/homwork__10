@@ -1,0 +1,73 @@
+.use{
+    padding-top: 95px;
+}
+
+.use__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.use__title{
+    margin-bottom: 20px;
+    width: 383px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 143%;
+    color: #0b132a;
+}
+
+.use__text{
+    width: 427px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    color: #4f5665;
+    margin-bottom: 20px;
+}
+
+.use__words{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    margin-bottom: 15px;
+    color: #4f5665;
+    display: flex;
+    align-items: center;
+
+    &::before{
+        content:" ";
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin-right: 12px;
+        background-repeat: no-repeat;
+        background-image: url('../img/tick.svg');
+        background-position: left;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .use__text{
+        width: auto;
+    }
+
+    .use__title{
+        width: auto;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .use__block{
+        display: block;
+    }
+
+    .use__img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .use__wrapper{
+        margin-top: 48px;
+    }
+}
